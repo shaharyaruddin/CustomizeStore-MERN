@@ -23,7 +23,7 @@ const Home = () => {
                         <img
                             src="./logo.png"
                             alt="logo"
-                            className="w-24 h-24 object-contain"
+                            className="w-24 h-24 filter invert object-contain"
                         />
                         <span className="text-sm text-gray-300 uppercase tracking-widest">Customize Hub</span>
                     </motion.header>

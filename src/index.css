@@ -7,7 +7,7 @@
 
 html {
   font-family: "Inter", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @supports (font-variation-settings: normal) {
