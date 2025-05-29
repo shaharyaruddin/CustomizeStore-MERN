@@ -2,9 +2,11 @@ import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useSnapshot } from 'valtio';
 import state from '../store';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
 
+  const navigate = useNavigate();
     const snap = useSnapshot(state)
 
 
@@ -92,6 +94,8 @@ const Hero = () => {
           Premium shirts crafted for comfort and elegance.
         </motion.p>
         <motion.button
+          onClick={() => navigate('/cart')} // 👈 Add this
+
           className="bg-white text-[#274856] px-6 py-3 rounded-full font-semibold text-lg hover:bg-gray-200 transition"
           initial={{ scale: 1 }}
           animate={{ scale: [1, 1.05, 1], rotate: [0, 5, -5, 0] }}
@@ -138,7 +142,8 @@ const Hero = () => {
                 <p className="text-gray-600 mb-4">{product.description}</p>
                 <p className="text-lg font-semibold mb-4">${product.price}</p>
                 <motion.button
-                  className="bg-[#274856] text-white px-4 py-2 rounded-full hover:bg-[#1e3a44] transition"
+                 onClick={() => navigate('/cart')} // 👈 Add this
+                 className="bg-[#274856] text-white px-4 py-2 rounded-full hover:bg-[#1e3a44] transition"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   whileTap={{ scale: 0.95 }}
                 >

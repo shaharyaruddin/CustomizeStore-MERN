@@ -50,7 +50,7 @@ const Home = () => {
                                 type="filled"
                                 title="Start Customizing"
                                 handleClick={() => (state.intro = false)}
-                                customStyles="px-8 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300"
+                                customStyles="z-20 px-8 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300"
                             />
                         </motion.div>
                     </motion.div>
