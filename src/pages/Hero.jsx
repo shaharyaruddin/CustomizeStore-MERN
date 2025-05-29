@@ -94,7 +94,7 @@ const Hero = () => {
           Premium shirts crafted for comfort and elegance.
         </motion.p>
         <motion.button
-          onClick={() => navigate('/cart')} // 👈 Add this
+          onClick={() => navigate('/shop-now')} 
 
           className="bg-white text-[#274856] px-6 py-3 rounded-full font-semibold text-lg hover:bg-gray-200 transition"
           initial={{ scale: 1 }}
@@ -107,7 +107,6 @@ const Hero = () => {
         </motion.button>
       </motion.section>
 
-      {/* Product Cards Section */}
       <section className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product, index) => (
