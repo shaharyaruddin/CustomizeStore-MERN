@@ -152,7 +152,7 @@ const ShopNow = () => {
                         navigate('/cart');
 
                         state.addToCart(product);
-                        state.intro = true;
+                        state.intro = true; 
                       }}
                       className="bg-[#274856] text-white px-4 py-2 rounded-full hover:bg-[#1e3a44] transition"
                       whileHover={{ scale: 1.1, rotate: 5 }}
