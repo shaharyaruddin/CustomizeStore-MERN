@@ -138,6 +138,7 @@ const Cart = () => {
                 Total: ${snap.cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2)}
               </p>
               <motion.button
+                onClick={() => navigate('/checkout')}
                 whileHover={{ scale: 1.05, boxShadow: '0 0 15px rgba(59, 130, 246, 0.5)' }}
                 whileTap={{ scale: 0.95 }}
                 className="px-6 py-3 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300 w-full sm:w-auto"

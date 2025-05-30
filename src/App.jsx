@@ -6,6 +6,7 @@ import Footer from "./pages/Footer";
 import Hero from "./pages/Hero";
 import Home from "./pages/Home";
 import ShopNow from './pages/ShopNow';
+import Checkout from './pages/Checkout';
 
 // Helper component to conditionally render layout
 const MainLayout = () => {
@@ -36,6 +37,7 @@ const AppContent = () => {
       <Routes>
         <Route path="/cart" element={<Cart />} />
         <Route path="/shop-now" element={<ShopNow />} />
+        <Route path="/checkout" element={<Checkout />} />
 
         <Route path="*" element={<MainLayout />} />
       </Routes>
